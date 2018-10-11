@@ -16,6 +16,6 @@ class String
 
   def count_sentences
     self.split.count
-    self.delete_if(&blank?)
+    self.delete_if(&:blank?)
   end
 end
